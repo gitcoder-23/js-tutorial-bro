@@ -36,3 +36,10 @@ console.log("scores=>", scores);
 var numbers = [1, 2, 3, 4, 5];
 var newNumbers = numbers.slice(0, 3);
 console.log("newNumbers=>", newNumbers);
+
+// Includes
+
+const numbersData = ["1", "2", "3", 4, 5];
+const includesData = numbersData.includes("3");
+
+console.log("includesData=>", includesData);

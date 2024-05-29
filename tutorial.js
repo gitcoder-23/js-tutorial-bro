@@ -70,6 +70,7 @@ console.log("numArr-2=>", numArr.indexOf(2));
 const strArr = ["1", "2", "3", "2", "5"];
 console.log("strArr=>", strArr.length);
 
+// Array of object
 const objArr = [
   {
     id: 1,
@@ -110,3 +111,36 @@ const arrowFun = () => {
 arrowFun();
 
 // Global Scope
+var title;
+function globalScopeFn() {
+  var title = 20;
+  console.log("title=>", title);
+}
+
+globalScopeFn();
+
+// Block Scope
+let subTitle = 20;
+function blockScopeFn() {
+  let subTitle = 20;
+  console.log("subTitle=>", subTitle);
+}
+
+blockScopeFn();
+
+// = use to assign any value in a variable
+const newData = 4;
+
+// == it returns only boolean value, it checks the data not type.
+const data1 = 4;
+const data2 = "4";
+const result = data1 == data2;
+
+console.log("resunt==>", result);
+
+// === it returns only boolean value, it checks the data as well as data type.
+const data3 = 4;
+const data4 = 4;
+const result2 = data3 === data4;
+
+console.log("resunt2==>", result2);

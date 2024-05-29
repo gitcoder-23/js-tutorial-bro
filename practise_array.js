@@ -26,7 +26,10 @@ const spliceData = arrData6.splice(0, 3);
 console.log('spliceData=>', spliceData);
 console.log('arrData6=>', arrData6);
 
-var arrData7 = [1, 2, 3, 4, 5];
-var sliceData = arrData7.slice(0, 3);
+let rColors = ['red', 'green', 'blue'];
+const rColorsSplice = rColors.splice(3, 0, 'sink', 9);
+console.log('rColors=>', rColors);
+
+const arrData7 = [1, 2, 3, 4, 5];
+const sliceData = arrData7.slice(0, 4);
 console.log('sliceData=>', sliceData);
-console.log('arrData7=>', arrData7);

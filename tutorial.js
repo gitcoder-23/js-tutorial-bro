@@ -14,7 +14,7 @@ var y = x;
 console.log("x-value=>", x);
 console.log("y-value=>", y);
 
-var x = 4;
+var x = 9;
 //console.log("x-value=>", x);
 
 // ES6 let, const
@@ -92,3 +92,21 @@ const objArr = [
 ];
 
 console.log("objArr=>", objArr, "objArr-length===>", objArr.length);
+
+// FUNCTION
+// vanilla Function ES5
+function newFun() {
+  console.log("vanilla newFun");
+}
+
+newFun();
+
+// Arrow Function ES6
+const arrowFun = () => {
+  const vrrName = "Suman";
+  console.log("vrrName=>", vrrName);
+};
+
+arrowFun();
+
+// Global Scope

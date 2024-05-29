@@ -43,3 +43,53 @@ const numbersData = ["1", "2", "3", 4, 5];
 const includesData = numbersData.includes("3");
 
 console.log("includesData=>", includesData);
+
+const numbersValue = 12;
+const data1 = numbersValue / 2;
+console.log("data1=>", data1);
+
+// Find Method
+// Even
+var numbersArr = [1, 2, 3, 4, 5];
+const evenData = numbersArr.find((fData) => fData % 2 == 0);
+
+console.log("evenData=>", evenData);
+
+// Odd
+var numbersArr2 = [1, 2, 3, 4, 5];
+const oddData = numbersArr.find((fData) => fData % 2 == 1);
+
+console.log("oddData=>", oddData);
+
+// taken from object of an array
+
+// Find the even credit value from the array
+let customers = [
+  {
+    name: "ABC Inc",
+    credit: 100,
+  },
+  {
+    name: "ACME Corp",
+    credit: 200,
+  },
+  {
+    name: "IoT AG",
+    credit: 300,
+  },
+  {
+    name: "IoT AG",
+    credit: 4000,
+  },
+];
+
+const evenCredit = customers.find((eData) => console.log("eData=>", eData));
+
+const evenCredit2 = customers.find((eData) => eData.credit % 2 == 0);
+console.log("evenCredit2=>", evenCredit2);
+
+// Find credit grater than 100
+const oddCredit2 = customers.find(
+  (eData) => eData.credit > 100 && eData.credit < 4000
+);
+console.log("oddCredit2=>", oddCredit2);

@@ -93,3 +93,60 @@ const oddCredit2 = customers.find(
   (eData) => eData.credit > 100 && eData.credit < 4000
 );
 console.log("oddCredit2=>", oddCredit2);
+
+// Map
+
+const arrDVAlue = [4, 9, 16, 25, 36];
+console.log("arrDVAlue=>", arrDVAlue);
+
+const mapArr = arrDVAlue.map((data, index) => {
+  console.log("data=>", data * 2);
+  // console.log("index=>", index);
+  return data * 2;
+});
+
+console.log("mapArr=>", mapArr);
+
+const mapSqrtArr = arrDVAlue.map((data, index) => {
+  console.log("data=>", Math.sqrt(data));
+  // console.log("index=>", index);
+  return Math.sqrt(data);
+});
+console.log("mapSqrtArr=>", mapSqrtArr);
+
+const mapSqrtArOneLiner = arrDVAlue.map((data, index) => Math.sqrt(data));
+console.log("mapSqrtArOneLiner=>", mapSqrtArOneLiner);
+
+// Filter
+
+const filterSqrtArOneLiner = customers.filter(
+  (data, index) => data.credit > 100
+);
+console.log("filterSqrtArOneLiner=>", filterSqrtArOneLiner);
+
+// Reduce
+// reduce()
+const arrNewData = [4, 20, 16, 18, 70];
+const reduceLeft = customers.reduce((previous, current) => {
+  console.log("previous=>", previous);
+  console.log("current=>", current);
+  return previous + current.credit;
+}, 0);
+
+console.log("reduceLeft=>", reduceLeft);
+
+// reduceRight()
+const reduceRight = customers.reduceRight((previous, current) => {
+  console.log("previous=>", previous);
+  console.log("current=>", current);
+  return previous + current.credit;
+}, 0);
+
+console.log("reduceRight=>", reduceRight);
+
+// sort
+const arrNewDVAlue = [20, 9, 12, 11, 40, 36];
+const sortAscending = arrNewDVAlue.sort((a, b) => a - b);
+console.log("sortAscending=>", sortAscending);
+const sortDescending = arrNewDVAlue.sort((a, b) => b - a);
+console.log("sortDescending=>", sortDescending);

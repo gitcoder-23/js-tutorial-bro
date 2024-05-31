@@ -42,3 +42,29 @@ console.log('lang=>', lang);
 const arrData7 = [1, 2, 3, 4, 5];
 const sliceData = arrData7.slice(0, 4);
 console.log('sliceData=>', sliceData);
+
+// -------------------------------------------------------------------------
+
+const B = [1, 2, 4];
+const C = [20, 25, 40];
+const D = [50, 250, 400];
+const E = [204, 252, 404];
+
+const concatArr1 = B.concat(C).concat(D).concat(E);
+console.log('concatArr1=>', concatArr1);
+
+const spreadArray = [...B, ...C, ...D, ...E];
+console.log('spreadArray =>', spreadArray);
+
+const value = [1, 2, 3, 4, [5, 6, 7, 8, [9, 10, 11, 12]]];
+const newValue = value.flat();
+console.log('newValue =>', newValue);
+
+const arr1 = ['sabitry', 'bai'];
+const joinArr = arr1.join('-');
+console.log('joinArr=>', joinArr);
+const makeLower = joinArr.toLowerCase();
+const makeUpper = joinArr.toUpperCase();
+
+console.log('makeLower=>', makeLower);
+console.log('makeUpper=>', makeUpper);

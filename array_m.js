@@ -150,3 +150,47 @@ const sortAscending = arrNewDVAlue.sort((a, b) => a - b);
 console.log("sortAscending=>", sortAscending);
 const sortDescending = arrNewDVAlue.sort((a, b) => b - a);
 console.log("sortDescending=>", sortDescending);
+
+// concat()
+const aDAta1 = [1, 2, 4];
+const aDAta2 = [20, 25, 40];
+const aDAta3 = [50, 250, 400];
+const aDAta4 = [204, 252, 404];
+
+const concatArr1 = aDAta1.concat(aDAta2).concat(aDAta3).concat(aDAta4);
+console.log("concatArr1=>", concatArr1);
+
+// spread operator
+
+const spradeArr = [...aDAta1, ...aDAta2, ...aDAta3, ...aDAta4];
+console.log("spradeArr=>", spradeArr);
+
+// flat
+const arrDeep = [
+  1,
+  2,
+  [4, 5, 6, [7, 8, 90, 40, [40, 30, 20, 80, [90, 40, 50]]]],
+];
+
+// 1deepth
+const flat1 = arrDeep.flat(Infinity);
+console.log("flat1=>", flat1);
+
+// Join
+const arrStr = ["Pranab", "Kanta", "Pandit"];
+const arrJoinLower = arrStr.join("_").toLowerCase();
+const arrJoinUpper = arrStr.join(" ").toUpperCase();
+console.log("arrJoinLower=>", arrJoinLower);
+console.log("arrJoinUpper=>", arrJoinUpper);
+
+// Reverse
+
+const arrRStr = ["Pranab", "Kanta", "Pandit"];
+const reverseArr = arrRStr.reverse();
+console.log("reverseArr=>", reverseArr);
+
+// Multidimensional Rrray
+const arr2D = [
+  [1, 2, 3],
+  [4, 5, 6],
+];

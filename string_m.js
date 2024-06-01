@@ -29,7 +29,7 @@ const strData = 'abc';
 const padStartStr = strData.padStart(7, 4);
 console.log('padStartStr=>', padStartStr);
 
-// padEnd
+// padEnd (count, value)
 const padEndStr = strData.padEnd(7, 4);
 console.log('padEndStr=>', padEndStr);
 
@@ -52,3 +52,25 @@ let splitPara = paragraph.split(' ', 5);
 console.log('splitPara=>', splitPara);
 let joinSplitedData = splitPara.join(' ');
 console.log('joinSplitedData=>', joinSplitedData);
+
+//  substring(index, counted str data)
+const substringRes = paragraph.substring(1, 12);
+console.log('substringRes=>', substringRes);
+
+// slice + count
+const sliceParaPlus = paragraph.slice(+3);
+console.log('sliceParaPlus=>', sliceParaPlus);
+// slice - count
+const sliceParaMinus = paragraph.slice(-3);
+console.log('sliceParaMinus=>', sliceParaMinus);
+
+// concat
+const str1 = 'java';
+const str2 = 'golang';
+const str3 = 'python';
+console.log('strlength=>', str2, str2.length);
+const padRightStr2 = str2.padStart(7);
+console.log('padRightStr2=>', padRightStr2, padRightStr2.length);
+
+const concatStr = str1.concat(padRightStr2).concat(str3);
+console.log('concatStr=>', concatStr);

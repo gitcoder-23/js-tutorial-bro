@@ -61,8 +61,6 @@ console.log('substringRes=>', substringRes);
 const sliceParaPlus = paragraph.slice(+3);
 console.log('sliceParaPlus=>', sliceParaPlus);
 // slice - count
-const sliceParaMinus = paragraph.slice(-3);
-console.log('sliceParaMinus=>', sliceParaMinus);
 
 // concat
 const str1 = 'java';

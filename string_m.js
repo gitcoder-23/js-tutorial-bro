@@ -74,3 +74,22 @@ console.log('padRightStr2=>', padRightStr2, padRightStr2.length);
 
 const concatStr = str1.concat(padRightStr2).concat(str3);
 console.log('concatStr=>', concatStr);
+
+// Template Literals ${}
+const newStr4 = 'marathon';
+const newStr5 = 'Australia';
+const strTempLiteralData = `${newStr5} ${newStr4}`;
+console.log('strTempLiteralData=>', strTempLiteralData);
+
+// replace(replace the place or character, replaced character)
+const userName = 'John Doe';
+const replacedName = userName.replace(' ', '-');
+console.log('replacedName=>', replacedName);
+
+// replaceAll(replace the place or character, replaced character)
+const userName2 = 'John Vogan Doms Wiill';
+const replacedAllName = userName2
+  .replaceAll(' ', '-')
+  .toUpperCase()
+  .toLowerCase();
+console.log('replacedAllName=>', replacedAllName);
